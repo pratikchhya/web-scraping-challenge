@@ -4,8 +4,8 @@ import pymongo
 import scrape_mars
 from splinter import Browser
 
-executable_path = {'executable_path': 'chromedriver.exe'}
-browser = Browser('chrome', **executable_path, headless=False)
+# executable_path = {'executable_path': 'chromedriver.exe'}
+# browser = Browser('chrome', **executable_path, headless=False)
 
 # Create an instance of Flask
 app = Flask(__name__)
@@ -29,5 +29,3 @@ def scrape():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-

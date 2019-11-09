@@ -7,10 +7,11 @@ import pymongo
 from splinter import browser
 
 from selenium import webdriver
-executable_path = {'executable_path': 'chromedriver.exe'}
-browser = Browser('chrome', **executable_path, headless=False)
 
 def scrape():
+    executable_path = {'executable_path': 'chromedriver.exe'}
+    browser = Browser('chrome', **executable_path, headless=False)
+
     mars_mission ={}
 
 # URL of page to be scraped
