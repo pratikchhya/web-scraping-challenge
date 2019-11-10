@@ -22,7 +22,7 @@ def scrape():
     html = browser.html
     soup = bs(html, 'html.parser')
 
-    news_title = soup.find("div", class_="content_title").text
+    news_title = soup.find("div", class_="content_title").find('a').text
     news_p = soup.find("div", class_="rollover_description_inner").text
 
 # Visit the url for JPL Featured Space Image
